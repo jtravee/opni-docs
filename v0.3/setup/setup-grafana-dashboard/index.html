@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#prerequisites" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -394,9 +399,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Setup Grafana Dashboard for Metric Service
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Setup Grafana Dashboard for Metric Service
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-dashboard" class="md-nav__link">
+    Setup Dashboard
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -610,6 +651,44 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-dashboard" class="md-nav__link">
+    Setup Dashboard
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -619,6 +698,9 @@
   <h1>Setup Grafana Dashboard for Metric Service</h1>
 
 <p>The Opni system supports an experimental version of metric anomaly detection service. To start get insights from it, its Grafana dashboard needs to be setup as follow:</p>
+<h4 id="prerequisites">Prerequisites:<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h4>
+<p>The Opni Metric Service requires Prometheus and Grafana to run. Rancher users can simply <a href="https://rancher.com/docs/rancher/v2.5/en/monitoring-alerting/guides/enable-monitoring/">enable Rancher monitoring</a> to install Prometheus and Grafana.</p>
+<h4 id="setup-dashboard">Setup Dashboard<a class="headerlink" href="#setup-dashboard" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Navigate to Grafana and log in. For a Rancher Monitoring user, the default username/password is <code>admin/prom-operator</code>. Otherwise, it is likely to be <code>admin/admin</code>.</li>
 <li><a href="https://grafana.com/docs/grafana/latest/datasources/add-a-data-source/#add-a-data-source">Add Elasticsearch as a Data Source</a>, and fill in these fields with following values:
